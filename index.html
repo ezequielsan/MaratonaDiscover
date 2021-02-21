@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>dev.finance$</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header">
+            <div></div>
+            <img src="./assets/logo.svg" alt="Logo Dev Finance">
+        <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>-->
+            <div class="toggle">
+                <input id="switch" type="checkbox" name="theme">
+                <label for="switch">Toggle</label>
+            </div>
+        </div>
+  
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="container">
+        <section id="balance">
+
+            <h2 class="sr-only">Balanço</h2>
+
+            <div class="card">
+                <h3>
+                    <span>Entradas</span>
+                    <img src="./assets/income.svg" alt="Imagem de Entrada">
+                </h3>
+                <p id="incomesDisplay">0,00</p>
+            </div>
+
+            <div class="card">
+                <h3>
+                    <span>Saídas</span>
+                    <img src="./assets/expense.svg" alt="Imagem de Saída">
+                </h3>
+                <p id="expensesDisplay">0,00</p>
+            </div>
+
+            <div class="card total">
+                <h3>
+                    <span>Total</span>
+                    <img src="./assets/total.svg" alt="Imagem de Total">
+                </h3>
+                <p id="totalDisplay">0,00</p>
+            </div>
+
+        </section>
+
+        <section id="transaction">
+
+            <h2 class="sr-only">Transações</h2>
+
+            <a href="#" onclick="Mymodal.toogle()" class="button new">+ Nova Transação</a>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="form">
+                <h2>Nova Transação</h2>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label for="description" class="sr-only">Descrição</label>
+                        <input type="text" id="description" name="description" placeholder="Descrição" autocomplete="off"/>
+                    </div>
+                    <div class="input-group">
+                        <label for="amount" class="sr-only">Valor</label>
+                        <input type="text" id="amount" name="amount" step="0.01" placeholder="0,00" autocomplete="off"/>
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas
+                            decimais</small>
+                    </div>
+                    <div class="input-group">
+                        <label for="date" class="sr-only">Data</label>
+                        <input type="date" id="date" name="date" />
+                    </div>
+                    <div class="input-group actions">
+                        <a href="#" onclick="Mymodal.toogle()" class="button cancel" >Cancelar</a>
+                        <button class="btn-salve">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé-->
+    <footer>
+        <button id="btn-scroll" onclick="scr.backToTop()"></button>
+        <p>2021 - dev<span>.</span>finance<span>$</span></p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
