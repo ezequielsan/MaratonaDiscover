@@ -335,28 +335,30 @@ const getStyle = (element, style) => {
     
 const initialColors = {
     bg: getStyle(html, "--bg"),
-    bgTable: getStyle(html, "--bg-table"),
+    bgHeader: getStyle(html, "--bg-header"),  
     bgCard: getStyle(html, "--bg-card"),
+    bgTable: getStyle(html, "--bg-table"),
     bgCardTotal: getStyle(html, "--bg-card-total"),
-    colorTextTotal: getStyle(html, "--color-text-total"),
-    colorText: getStyle(html, "--color-text"),   
-    bgHeader: getStyle(html, "--bg-header"),   
+    bgModal: getStyle(html, "--bg-modal"),
+    bgInput: getStyle(html, "--bg-input"),
+    bgBtn: getStyle(html, "--bg-btn"),
+    colorText: getStyle(html, "--color-text"),  
     green: getStyle(html, "--green"),   
-    greenLight: getStyle(html, "--green-light"),   
     red: getStyle(html, "--red"),   
 }
 
 const darkMode = {
-    bg: "#121214",
-    bgTable: "#434343",
-    bgCard: "#202024",
-    bgCardTotal: "#04D361",
-    colorTextTotal: "#E1E1E6",
+    bg: "#1f2933",
+    bgHeader: "#1f2933",
+    bgCard: "#3e4c5f",
+    bgTable: "#323f4b",
+    bgCardTotal: "#49AA26",
+    bgModal: "#323f4b",
+    bgInput: "#e4e7eb",
+    bgBtn: "#3e4c59",
     colorText: "#E1E1E6",
-    bgHeader: "#9466FF",
-    green: "#04D361",
-    greenLight: "#ffff3f",
-    red: "#ce2f06"
+    green: "#16e660b8",
+    red: "#ff5630"
 }
 
 const transformKey = key => "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
@@ -371,5 +373,4 @@ const changeColors = colors => {
 
 checkbox.addEventListener('change', ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors);
-
 })

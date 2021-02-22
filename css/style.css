@@ -16,11 +16,14 @@ html {
 
     --color-text: #363f5f;
     --bg: #f0f2f5;
+    --bg-card: #fff;
     --bg-table: #fff;
-    --bg-card: var(--bg);
-    --bg-card-total: var(--green);
+    --bg-card-total: #49aa26;
+    --bg-modal: #f0f2f5;
+    --bg-input: #fff;
+    --bg-btn: #4f08f1ed;
     --green: #49aa26;
-    --green-light: #64c503;
+    --green-light: #04d361;
     --red: #e92929;
     --bg-header: #8257E6;
 }
@@ -116,7 +119,7 @@ svg {
 
 .card.total {
     background: var(--bg-card-total);
-    color: var(--bg);
+    color: white;
 }
 
 .card h3 {
@@ -211,7 +214,7 @@ input[type=checkbox] {
 }
 
 input:checked + label {
-    background: var(--green);
+    background: var(--green-light);
 }
 
 input:checked + label::after {
@@ -308,7 +311,7 @@ td.expense {
 }
 
 .modal {
-    background: var(--bg);
+    background: var(--bg-modal);
     padding: 2.4rem;
     z-index: 1;
 }
@@ -323,6 +326,7 @@ td.expense {
 }
 
 input {
+    background-color: var(--bg-input);
     border: none;
     border-radius: .25rem;
     padding: .8rem;
@@ -334,6 +338,7 @@ input {
 }
 
 .input-group .help {
+    color: var(--color-text);
     opacity: .5;
 }
 
@@ -358,7 +363,7 @@ footer {
 }
 
 footer #btn-scroll {
-    background: #29292E;
+    background: var(--bg-btn);
     width: 42px;
     height: 40px;
     border: none;
@@ -378,7 +383,7 @@ footer #btn-scroll::after {
     font-weight: lighter;
     font-size: 18px;
     line-height: 10px;
-    color: #8257E6;
+    color: #000;
 }
 
 footer p > span {
