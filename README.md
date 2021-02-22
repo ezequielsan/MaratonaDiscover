@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/issues-0%20open-%238257E6" width="105"/>
 </div>
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/77730400/108603332-28aa6680-7386-11eb-9a0e-6bfe5b57b44a.png"/>
+  <img src="https://user-images.githubusercontent.com/77730400/108779346-7c16e300-7545-11eb-91ba-fa764fb79885.png"/>
 </div>
 
 ## :rocket: Technologies
