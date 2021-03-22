@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="100" src="https://raw.githubusercontent.com/ezequielsan/maratona-discover/b128c27fa82de6a5a4f8efefc5634a57b2115240/assets/logo.svg">
+  <img width="300" height="100" src="https://raw.githubusercontent.com/ezequielsan/MaratonaDiscover/master/assets/logo.svg">
 </p>
   <p align="center">:coffee: Code and coffee</p>
   <a href="/apm/l/:packageName"/>
